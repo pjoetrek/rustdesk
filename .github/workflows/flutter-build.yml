@@ -28,8 +28,8 @@ env:
   ANDROID_SIGNING_KEY: '${{ secrets.ANDROID_SIGNING_KEY }}'
   MACOS_P12_BASE64: '${{ secrets.MACOS_P12_BASE64 }}'
   # To make a custom build with your own servers set the below secret values
-  RS_PUB_KEY: 'pD1fR++kV6u68EtLYhoAgVwJQUZCAxEPlOHp3IyB8UU='
-  RENDEZVOUS_SERVER: '89.58.60.237'
+  RS_PUB_KEY: '${{ secrets.RS_PUB_KEY }}'
+  RENDEZVOUS_SERVER: '${{ secrets.RENDEZVOUS_SERVER }}'
   UPLOAD_ARTIFACT: "${{ inputs.upload-artifact }}"
 
 jobs:
